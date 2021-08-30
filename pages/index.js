@@ -1,22 +1,13 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import { Fragment } from "react";
-import {
-  AppBar,
-  Button,
-  Container,
-  Toolbar,
-  Typography,
-} from "@material-ui/core";
+import { Container } from "@material-ui/core";
 import styles from "../styles/Home.module.css";
+import { useAuthSession } from "../hooks";
 
 export default function Home() {
+  useAuthSession();
+
   return (
-    <Fragment>
-      <Container maxWidth="lg">
-        <div>home</div>
-      </Container>
-    </Fragment>
+    <Container maxWidth="lg">
+      <div />
+    </Container>
   );
 }
