@@ -13,7 +13,7 @@ export default function Layout({ children }) {
         </Toolbar>
       </AppBar>
       <Container>
-        <main>{children}</main>
+        <main style={{ marginTop: 20 }}>{children}</main>
       </Container>
     </Fragment>
   );
